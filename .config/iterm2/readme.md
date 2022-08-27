@@ -11,3 +11,11 @@ defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.config/iterm2
 # Tell iTerm2 to use the custom preferences in the directory
 defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
 ```
+
+
+![Screenshot - iTerm2 pink light theme](https://i.imgur.com/bzjVTVH.png)
+<p align="center">iTerm 2 pink light theme</p>
+
+
+![Screenshot - iTerm2 pink dark theme](https://i.imgur.com/RknWRtc.png)
+<p align="center">iTerm 2 pink dark theme</p>
