@@ -1,0 +1,46 @@
+{
+  "$schema" : "https:\/\/app.linearmouse.org\/schema\/0.7.3",
+  "schemes" : [
+    {
+      "pointer" : {
+        "acceleration" : 1.2544,
+        "disableAcceleration" : true
+      },
+      "if" : {
+        "device" : {
+          "productName" : "USB Receiver",
+          "productID" : "0xc548",
+          "category" : "mouse",
+          "vendorID" : "0x46d"
+        }
+      },
+      "scrolling" : {
+        "reverse" : {
+          "horizontal" : false
+        },
+        "distance" : "36px"
+      }
+    },
+    {
+      "if" : {
+        "app" : "org.videolan.vlc"
+      },
+      "scrolling" : {
+        "distance" : "auto"
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "productName" : "USB Optical Mouse",
+          "productID" : "0xc077",
+          "category" : "mouse",
+          "vendorID" : "0x46d"
+        }
+      },
+      "scrolling" : {
+        "distance" : 3
+      }
+    }
+  ]
+}
