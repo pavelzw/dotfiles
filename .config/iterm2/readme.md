@@ -17,5 +17,5 @@ defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
 <p align="center">iTerm 2 pink light theme</p>
 
 
-![Screenshot - iTerm2 pink dark theme](https://i.imgur.com/RknWRtc.png)
+![Screenshot - iTerm2 pink dark theme](https://i.imgur.com/lZ739Es.png)
 <p align="center">iTerm 2 pink dark theme</p>

@@ -1591,13 +1591,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.55294117647058827</real>
+				<real>0.85882352941176465</real>
 				<key>Color Space</key>
 				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.32941176470588235</real>
+				<real>0.68235294117647061</real>
 				<key>Red Component</key>
-				<real>0.25882352941176473</real>
+				<real>0.81176470588235294</real>
 			</dict>
 			<key>Ansi 2 Color (Light)</key>
 			<dict>
@@ -2638,7 +2638,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.097446808510638278</real>
+			<real>0.15319148936170213</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>

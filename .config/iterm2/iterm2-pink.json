@@ -80,7 +80,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.32941176470588235
   },
-  "Transparency" : 0.097446808510638278,
+  "Transparency" : 0.15319148936170213,
   "Bound Hosts" : [
 
   ],
@@ -101,11 +101,11 @@
     "Green Component" : 0.44313725490196076
   },
   "Ansi 2 Color (Dark)" : {
-    "Red Component" : 0.25882352941176473,
+    "Red Component" : 0.81176470588235294,
     "Color Space" : "P3",
-    "Blue Component" : 0.55294117647058827,
+    "Blue Component" : 0.85882352941176465,
     "Alpha Component" : 1,
-    "Green Component" : 0.32941176470588235
+    "Green Component" : 0.68235294117647061
   },
   "Cursor Color" : {
     "Red Component" : 0.51372549019607838,
