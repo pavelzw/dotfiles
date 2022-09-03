@@ -1,0 +1,16 @@
+[user]
+  email = pavelzw@gmail.com
+  name = Pavel Zwerschke
+  signingkey = D5A9D3831105F933C040B23B43E091FBB4E98046
+[credential]
+  helper = osxkeychain
+[commit]
+  gpgsign = true
+[includeIf "gitdir:~/QuantCo/"]
+  path = quantco-config
+[init]
+  defaultBranch = "main"
+[github]
+  user = pavelzw
+[pull]
+  rebase = true
