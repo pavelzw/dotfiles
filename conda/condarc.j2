@@ -1,7 +1,13 @@
+channel_alias: {{ conda.qc.channel_alias }}
+
 channels:
   - conda-forge
   - qc-internal
 
 custom_multichannels:
-  qc-internal:
-    - {{ conda.qc_internal_channel }}
+  conda-forge:
+    - https://conda.anaconda.org/conda-forge
+  cf-staging:
+    - https://conda.anaconda.org/cf-staging
+  pytorch:
+    - https://conda.anaconda.org/pytorch
