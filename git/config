@@ -6,7 +6,7 @@
   helper = osxkeychain
 [commit]
   gpgsign = true
-[includeIf "gitdir:~/QuantCo/"]
+[includeIf "gitdir:~/quantco/"]
   path = quantco-config
 [init]
   defaultBranch = "main"
