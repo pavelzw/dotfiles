@@ -10,3 +10,6 @@
 [submodule "oh-my-zsh/custom/plugins/fzf-zsh-plugin"]
 	path = oh-my-zsh/custom/plugins/fzf-zsh-plugin
 	url = https://github.com/unixorn/fzf-zsh-plugin.git
+[submodule "keyboard-layouts/us-with-german-umlauts"]
+	path = keyboard-layouts/us-with-german-umlauts
+	url = https://github.com/patrick-zippenfenig/us-with-german-umlauts.git

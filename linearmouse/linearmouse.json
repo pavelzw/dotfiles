@@ -16,7 +16,8 @@
       },
       "scrolling" : {
         "reverse" : {
-          "horizontal" : false
+          "horizontal" : false,
+          "vertical": true
         },
         "distance" : "36px"
       }
