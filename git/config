@@ -2,6 +2,9 @@
   email = pavelzw@gmail.com
   name = Pavel Zwerschke
   signingkey = D5A9D3831105F933C040B23B43E091FBB4E98046
+[alias]
+  lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+  undo = reset HEAD~
 [credential]
   helper = osxkeychain
 [commit]
@@ -16,3 +19,5 @@
   user = pavelzw
 [pull]
   rebase = true
+[rebase]
+  autoStash = true
