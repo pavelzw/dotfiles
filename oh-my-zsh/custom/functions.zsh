@@ -1,6 +1,6 @@
 function pferd() {
-  find ~/PFERD_SS22 -name '.DS_Store' -delete;
-  ~/PFERD_SS22/pferd "$@";
+  find ~/pferd -name '.DS_Store' -delete;
+  ~/pferd/pferd-mac -c ~/pferd/pferd-ws2223.cfg "$@";
 }
 
 function whois() {
