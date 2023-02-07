@@ -1,6 +1,38 @@
 {
-  "$schema" : "https:\/\/app.linearmouse.org\/schema\/0.7.3",
+  "$schema" : "https:\/\/app.linearmouse.org\/schema\/0.7.5",
   "schemes" : [
+    {
+      "if" : {
+        "app" : "com.adobe.photoshop-image"
+      },
+      "scrolling" : {
+        "distance" : "auto"
+      }
+    },
+    {
+      "if" : {
+        "app" : "com.adobe.illustrator"
+      },
+      "scrolling" : {
+        "distance" : "auto"
+      }
+    },
+    {
+      "if" : {
+        "app" : "com.adobe.PremierePro.22"
+      },
+      "scrolling" : {
+        "distance" : "auto"
+      }
+    },
+    {
+      "if" : {
+        "app" : "com.adobe.LightroomClassicCC7"
+      },
+      "scrolling" : {
+        "distance" : "auto"
+      }
+    },
     {
       "pointer" : {
         "acceleration" : 1.2544,
@@ -17,17 +49,9 @@
       "scrolling" : {
         "reverse" : {
           "horizontal" : false,
-          "vertical": true
+          "vertical" : true
         },
-        "distance" : "36px"
-      }
-    },
-    {
-      "if" : {
-        "app" : "org.videolan.vlc"
-      },
-      "scrolling" : {
-        "distance" : "auto"
+        "distance" : 3
       }
     },
     {
@@ -40,6 +64,9 @@
         }
       },
       "scrolling" : {
+        "reverse" : {
+          "vertical" : true
+        },
         "distance" : 3
       }
     }
