@@ -9,6 +9,9 @@
   helper = osxkeychain
 [core]
   excludesFile = ~/.config/git/ignore
+  # make git branch behavior not like `less` unless needed
+  # https://stackoverflow.com/a/49862151/18839600
+  pager = less -FRX
 [commit]
   gpgsign = true
 [gpg]
