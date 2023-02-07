@@ -1,73 +1,47 @@
 {
-  "$schema" : "https:\/\/app.linearmouse.org\/schema\/0.7.5",
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.7.6",
   "schemes" : [
     {
       "if" : {
-        "app" : "com.adobe.photoshop-image"
+        "device" : {
+          "category" : "mouse"
+        }
       },
-      "scrolling" : {
-        "distance" : "auto"
-      }
-    },
-    {
-      "if" : {
-        "app" : "com.adobe.illustrator"
-      },
-      "scrolling" : {
-        "distance" : "auto"
-      }
-    },
-    {
-      "if" : {
-        "app" : "com.adobe.PremierePro.22"
-      },
-      "scrolling" : {
-        "distance" : "auto"
-      }
-    },
-    {
-      "if" : {
-        "app" : "com.adobe.LightroomClassicCC7"
-      },
-      "scrolling" : {
-        "distance" : "auto"
-      }
-    },
-    {
       "pointer" : {
-        "acceleration" : 1.2544,
         "disableAcceleration" : true
       },
-      "if" : {
-        "device" : {
-          "productName" : "USB Receiver",
-          "productID" : "0xc548",
-          "category" : "mouse",
-          "vendorID" : "0x46d"
-        }
-      },
       "scrolling" : {
         "reverse" : {
-          "horizontal" : false,
           "vertical" : true
         },
         "distance" : 3
       }
     },
     {
-      "if" : {
-        "device" : {
-          "productName" : "USB Optical Mouse",
-          "productID" : "0xc077",
-          "category" : "mouse",
-          "vendorID" : "0x46d"
+      "if" : [
+        {
+          "app" : "com.adobe.photoshop-image"
+        },
+        {
+          "app" : "com.adobe.illustrator"
+        },
+        {
+          "app" : "com.adobe.PremierePro.22"
+        },
+        {
+          "app" : "com.adobe.LightroomClassicCC7"
         }
+      ],
+      "scrolling" : {
+        "distance" : "auto"
+      }
+    },
+    {
+      "if" : {
+        "app" : "com.microsoft.VSCode"
       },
       "scrolling" : {
-        "reverse" : {
-          "vertical" : true
-        },
-        "distance" : 3
+        "distance" : 1
       }
     }
   ]
