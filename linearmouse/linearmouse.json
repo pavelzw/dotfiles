@@ -20,16 +20,28 @@
     {
       "if" : [
         {
-          "app" : "com.adobe.photoshop-image"
+          "app" : "com.adobe.photoshop-image",
+          "device" : {
+            "category" : "mouse"
+          }
         },
         {
-          "app" : "com.adobe.illustrator"
+          "app" : "com.adobe.illustrator",
+          "device" : {
+            "category" : "mouse"
+          }
         },
         {
-          "app" : "com.adobe.PremierePro.22"
+          "app" : "com.adobe.PremierePro.22",
+          "device" : {
+            "category" : "mouse"
+          }
         },
         {
-          "app" : "com.adobe.LightroomClassicCC7"
+          "app" : "com.adobe.LightroomClassicCC7",
+          "device" : {
+            "category" : "mouse"
+          }
         }
       ],
       "scrolling" : {
@@ -38,7 +50,10 @@
     },
     {
       "if" : {
-        "app" : "com.microsoft.VSCode"
+        "app" : "com.microsoft.VSCode",
+        "device" : {
+          "category" : "mouse"
+        }
       },
       "scrolling" : {
         "distance" : 1
