@@ -1,0 +1,12 @@
+font-family = "Comic Code"
+
+# https://github.com/ghostty-org/ghostty/discussions/3730
+# theme = dark:rose-pine-moon,light:rose-pine-dawn
+theme = dark:tokyonight-storm,light:tokyonight-day
+
+#shell-integration = fish
+
+# https://github.com/ghostty-org/ghostty/discussions/3207#discussioncomment-11673995
+keybind = alt+left=unbind
+keybind = alt+right=unbind
+

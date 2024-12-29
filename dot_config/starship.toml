@@ -1,0 +1,19 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = false
+
+[gcloud]
+disabled = true
+
+[package]
+disabled = true
+
+[python]
+python_binary = [
+  "python",
+  ".pixi/envs/default/bin/python",
+  "python3",
+  "python2",
+]
+

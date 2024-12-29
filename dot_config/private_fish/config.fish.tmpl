@@ -1,0 +1,71 @@
+alias m=micromamba
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias gs="git status"
+alias ga="git add"
+alias gc="git commit"
+alias gp="git push"
+alias gl="git pull"
+alias lg=lazygit
+alias asitop="sudo asitop"
+alias cdtemp='cd $(mktemp -d)'
+alias cat=bat
+alias cat-old=/bin/cat
+
+alias ls-old=/bin/ls
+alias neofetch=fastfetch
+alias neofetch-old=/opt/homebrew/bin/neofetch
+alias j=just
+alias p=pixi
+
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+
+/opt/homebrew/bin/brew shellenv | source
+micromamba shell hook --shell fish | source
+export PRE_COMMIT_USE_MICROMAMBA=1
+direnv hook fish | source
+export PRJ="$HOME/projects"
+export QC="$HOME/quantco"
+
+export ARTIFACTORY_USERNAME='pavel.zwerschke@quantco.com'
+export ARTIFACTORY_PASSWORD='{{ (secretJSON (print .chezmoi.sourceDir "/secrets.enc.yml")).artifactory.token }}'
+
+export PNPM_HOME="$HOME/.local/share/pnpm"
+# `brew shellenv` uses fish_add_path which doesn't prepend to the path leading to issues when using fish in tmux
+export PATH="$HOME/.pixi/bin:$HOME/.local/custom/bin:$HOME/.cargo/bin:/opt/homebrew/bin:$PNPM_HOME:$PATH"
+
+function sha256url
+    curl -Ls $argv[1] | shasum -a 256
+end
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+function setuptools-scm-vars
+    set -x GIT_DESCRIBE_TAG (git describe --tags --abbrev=0 || echo UNKNOWN)
+    set -x GIT_DESCRIBE_HASH g(git rev-parse --short HEAD || echo UNKNOWN)
+    set -x GIT_DESCRIBE_NUMBER (git rev-list --count $GIT_DESCRIBE_TAG..HEAD || echo UNKNOWN)
+    export GIT_DESCRIBE_TAG GIT_DESCRIBE_HASH GIT_DESCRIBE_NUMBER
+end
+
+function checkout-pr
+    cdtemp
+    git clone https://github.com/quantco/$argv[1]
+    cd $argv[1]
+    git switch $argv[2]
+    zed .
+end
+
+function is-dos
+    unix2dos < $argv[1] | cmp - $argv[1]
+end
+
+function is-unix
+    dos2unix < $argv[1] | cmp - $argv[1]
+end
+
+if status is-interactive
+    # Commands to run in interactive sessions can go here
+    starship init fish | source
+    tailscale completion fish | source
+end

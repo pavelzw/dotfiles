@@ -1,0 +1,7 @@
+default-channels = [
+    "{{ (secretJSON (print .chezmoi.sourceDir "/secrets.enc.yml")).artifactory.url }}",
+    "conda-forge"
+]
+
+change-ps1 = false
+

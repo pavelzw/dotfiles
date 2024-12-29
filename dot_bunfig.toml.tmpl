@@ -1,0 +1,2 @@
+[install.scopes]
+"@quantco" = { token = "{{ (secretJSON (print .chezmoi.sourceDir "/secrets.enc.yml")).nodejs.github_pat }}", url = "https://npm.pkg.github.com" }

@@ -1,0 +1,82 @@
+{
+  "schemes" : [
+    {
+      "if" : {
+        "device" : {
+          "category" : "mouse"
+        }
+      },
+      "pointer" : {
+        "disableAcceleration" : true
+      },
+      "scrolling" : {
+        "distance" : 3,
+        "reverse" : {
+          "vertical" : true
+        }
+      }
+    },
+    {
+      "if" : [
+        {
+          "device" : {
+            "category" : "mouse"
+          },
+          "app" : "com.adobe.photoshop-image"
+        },
+        {
+          "app" : "com.adobe.illustrator",
+          "device" : {
+            "category" : "mouse"
+          }
+        },
+        {
+          "device" : {
+            "category" : "mouse"
+          },
+          "app" : "com.adobe.PremierePro.22"
+        },
+        {
+          "device" : {
+            "category" : "mouse"
+          },
+          "app" : "com.adobe.LightroomClassicCC7"
+        }
+      ],
+      "scrolling" : {
+        "distance" : "auto"
+      }
+    },
+    {
+      "scrolling" : {
+        "distance" : 1
+      },
+      "if" : {
+        "device" : {
+          "category" : "mouse"
+        },
+        "app" : "com.microsoft.VSCode"
+      }
+    },
+    {
+      "pointer" : {
+        "acceleration" : 1
+      },
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0xc332",
+          "vendorID" : "0x46d",
+          "serialNumber" : "0483364D3333",
+          "productName" : "Gaming Mouse G502"
+        }
+      },
+      "scrolling" : {
+        "distance" : {
+          "vertical" : 4
+        }
+      }
+    }
+  ],
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.9.5"
+}
