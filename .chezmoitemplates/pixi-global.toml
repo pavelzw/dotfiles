@@ -30,6 +30,11 @@ channels = ["conda-forge"]
 dependencies = { speedtest-cli = "*" }
 exposed = { speedtest = "speedtest", speedtest-cli = "speedtest-cli" }
 
+[envs.awscli]
+channels = ["conda-forge"]
+dependencies = { awscli = "*" }
+exposed = { "aws.cmd" = "aws.cmd", aws_bash_completer = "aws_bash_completer", aws = "aws", aws_completer = "aws_completer", aws_zsh_completer = "aws_zsh_completer" }
+
 [envs.taplo]
 channels = ["conda-forge"]
 dependencies = { taplo = "*" }
@@ -44,6 +49,11 @@ exposed = { s-tui = "s-tui" }
 channels = ["conda-forge"]
 dependencies = { pixi-pack = "*" }
 exposed = { pixi-pack = "pixi-pack" }
+
+[envs.lazygit]
+channels = ["conda-forge"]
+dependencies = { lazygit = "*" }
+exposed = { lazygit = "lazygit" }
 
 [envs.lucky-commit]
 channels = ["conda-forge"]
@@ -65,15 +75,15 @@ channels = ["conda-forge"]
 dependencies = { parquet-tools = "*" }
 exposed = { parquet-tools = "parquet-tools" }
 
-[envs.quetz-client]
-channels = ["conda-forge"]
-dependencies = { quetz-client = "*" }
-exposed = { quetz-client = "quetz-client" }
-
 [envs.hatch]
 channels = ["conda-forge"]
 dependencies = { hatch = "*" }
 exposed = { hatch = "hatch" }
+
+[envs.television]
+channels = ["conda-forge"]
+dependencies = { television = "*" }
+exposed = { tv = "tv" }
 
 [envs.poetry]
 channels = ["conda-forge"]
@@ -110,6 +120,11 @@ channels = ["conda-forge"]
 dependencies = { twine = "*" }
 exposed = { twine = "twine" }
 
+[envs.chezmoi]
+channels = ["conda-forge"]
+dependencies = { chezmoi = "*" }
+exposed = { chezmoi = "chezmoi" }
+
 [envs.asitop]
 channels = ["conda-forge"]
 dependencies = { asitop = "*" }
@@ -120,27 +135,12 @@ channels = ["conda-forge"]
 dependencies = { cowpy = "*" }
 exposed = { cowpy = "cowpy" }
 
-[envs.television]
-channels = ["conda-forge"]
-dependencies = { television = "*" }
-exposed = { tv = "tv" }
-
-[envs.lazygit]
-channels = ["conda-forge"]
-dependencies = { lazygit = "*" }
-exposed = { lazygit = "lazygit" }
-
-[envs.awscli]
-channels = ["conda-forge"]
-dependencies = { awscli = "*" }
-exposed = { aws = "aws", "aws.cmd" = "aws.cmd", aws_bash_completer = "aws_bash_completer", aws_completer = "aws_completer", aws_zsh_completer = "aws_zsh_completer" }
-
 [envs.conda-deny]
 channels = ["conda-forge"]
 dependencies = { conda-deny = "*" }
 exposed = { conda-deny = "conda-deny" }
 
-[envs.chezmoi]
+[envs.minio-server]
 channels = ["conda-forge"]
-dependencies = { chezmoi = "*" }
-exposed = { chezmoi = "chezmoi" }
+dependencies = { minio-server = "*" }
+exposed = { minio = "minio" }
