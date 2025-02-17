@@ -10,7 +10,17 @@
   excludesFile = ~/.config/git/ignore
   # make git branch behavior not like `less` unless needed
   # https://stackoverflow.com/a/49862151/18839600
-  pager = less -FRX
+  # pager = less -FRX
+  pager = delta
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  navigate = true
+[merge]
+  conflictstyle = zdiff3
+[http]
+  # https://stackoverflow.com/a/6849424/18839600
+  postBuffer = 524288000
 [includeIf "gitdir:~/quantco/"]
   path = quantco-config
 [init]

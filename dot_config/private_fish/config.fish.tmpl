@@ -12,10 +12,10 @@ alias asitop="sudo asitop"
 alias cdtemp='cd $(mktemp -d)'
 alias cat=bat
 alias cat-old=/bin/cat
+alias chezmoi-repo='zed "$(chezmoi source-path)"'
 
 alias ls-old=/bin/ls
 alias neofetch=fastfetch
-alias neofetch-old=/opt/homebrew/bin/neofetch
 alias j=just
 alias p=pixi
 
@@ -54,6 +54,10 @@ function checkout-pr
     cd $argv[1]
     git switch $argv[2]
     zed .
+end
+
+function pixi-diff-md
+    pixi exec pixi-diff --before (git show $argv[1]:pixi.lock | psub) --after pixi.lock | pixi exec pixi-diff-to-markdown
 end
 
 function is-dos

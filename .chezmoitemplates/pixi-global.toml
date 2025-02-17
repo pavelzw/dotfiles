@@ -144,3 +144,33 @@ exposed = { conda-deny = "conda-deny" }
 channels = ["conda-forge"]
 dependencies = { minio-server = "*" }
 exposed = { minio = "minio" }
+
+[envs.git-delta]
+channels = ["conda-forge"]
+dependencies = { git-delta = "*" }
+exposed = { delta = "delta" }
+
+[envs.tokei]
+channels = ["conda-forge"]
+dependencies = { tokei = "*" }
+exposed = { tokei = "tokei" }
+
+[envs.py-crude-resource-monitor]
+channels = ["conda-forge"]
+dependencies = { py-crude-resource-monitor = "*" }
+exposed = { py-crude-resource-monitor = "py-crude-resource-monitor" }
+
+[envs.ripgrep]
+channels = ["conda-forge"]
+dependencies = { ripgrep = "*" }
+exposed = { rg = "rg" }
+
+[envs.fd-find]
+channels = ["conda-forge"]
+dependencies = { fd-find = "*" }
+exposed = { fd = "fd" }
+
+[envs.pixi-diff]
+channels = ["conda-forge"]
+dependencies = { pixi-diff = "*", pixi-diff-to-markdown = "*" }
+exposed = { pixi-diff = "pixi-diff", pixi-diff-to-markdown = "pixi-diff-to-markdown" }
